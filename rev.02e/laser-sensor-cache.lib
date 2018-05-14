@@ -1,0 +1,159 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# laser-sensor-rescue:78xx-RESCUE-laser-sensor-laser-sensor-rescue
+#
+DEF laser-sensor-rescue:78xx-RESCUE-laser-sensor-laser-sensor-rescue U 0 40 Y Y 1 F N
+F0 "U" -200 -200 60 H V C CNN
+F1 "laser-sensor-rescue:78xx-RESCUE-laser-sensor-laser-sensor-rescue" -150 150 60 H V C CNN
+F2 "" -50 0 60 H I C CNN
+F3 "" -50 0 60 H I C CNN
+DRAW
+S -250 100 250 -150 0 1 0 N
+X GND 1 0 -350 200 U 50 50 1 1 I
+X OUT 2 450 0 200 L 50 50 1 1 I
+X IN 3 -450 0 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# laser-sensor-rescue:CONN_01X04-conn
+#
+DEF laser-sensor-rescue:CONN_01X04-conn P 0 40 Y N 1 F N
+F0 "P" 0 250 50 H V C CNN
+F1 "laser-sensor-rescue:CONN_01X04-conn" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X04
+ Pin_Header_Angled_1X04
+ Socket_Strip_Straight_1X04
+ Socket_Strip_Angled_1X04
+$ENDFPLIST
+DRAW
+S -50 -145 10 -155 0 1 0 N
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 155 10 145 0 1 0 N
+S -50 200 50 -200 0 1 0 N
+X P1 1 -200 150 150 R 50 50 1 1 P
+X P2 2 -200 50 150 R 50 50 1 1 P
+X P3 3 -200 -50 150 R 50 50 1 1 P
+X P4 4 -200 -150 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# laser-sensor-rescue:C_Small-device
+#
+DEF laser-sensor-rescue:C_Small-device C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "laser-sensor-rescue:C_Small-device" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# laser-sensor-rescue:GND-power
+#
+DEF laser-sensor-rescue:GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "laser-sensor-rescue:GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# laser-sensor-rescue:Polyfuse_Small-device
+#
+DEF laser-sensor-rescue:Polyfuse_Small-device F 0 0 N Y 1 F N
+F0 "F" -75 0 50 V V C CNN
+F1 "laser-sensor-rescue:Polyfuse_Small-device" 75 0 50 V V C CNN
+F2 "" 50 -200 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *polyfuse*
+ *PTC*
+$ENDFPLIST
+DRAW
+S -20 50 20 -50 0 1 0 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 -40 50 -40 30 40 -30 40 -50 N
+X ~ 1 0 100 25 D 50 50 1 1 P
+X ~ 2 0 -100 25 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# laser-sensor-rescue:R-device
+#
+DEF laser-sensor-rescue:R-device R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "laser-sensor-rescue:R-device" 0 0 50 V V C CNN
+F2 "" -70 0 50 V V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ok1hra:LSF0102
+#
+DEF ok1hra:LSF0102 U 0 40 Y Y 1 F N
+F0 "U" -250 300 60 H V C CNN
+F1 "ok1hra:LSF0102" -100 -300 60 H V C CNN
+F2 "" -50 0 60 H V C CNN
+F3 "" -50 0 60 H V C CNN
+DRAW
+S -300 250 300 -250 0 1 0 N
+X GND 1 -500 150 200 R 50 50 1 1 I
+X Vref_A 2 -500 50 200 R 50 50 1 1 I
+X A1 3 -500 -50 200 R 50 50 1 1 I
+X A2 4 -500 -150 200 R 50 50 1 1 I
+X B2 5 500 -150 200 L 50 50 1 1 I
+X B1 6 500 -50 200 L 50 50 1 1 I
+X Vref_B 7 500 50 200 L 50 50 1 1 I
+X EN 8 500 150 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ok1hra:PAT9125EL
+#
+DEF ok1hra:PAT9125EL U 0 40 Y Y 1 F N
+F0 "U" 200 -300 60 H V C CNN
+F1 "ok1hra:PAT9125EL" -50 300 60 H V C CNN
+F2 "" 50 0 60 H I C CNN
+F3 "" 50 0 60 H I C CNN
+DRAW
+S -300 -250 300 250 0 1 0 N
+X VLD 1 -500 150 200 R 50 50 1 1 I
+X VDDA 2 -500 50 200 R 50 50 1 1 I
+X Vdd 3 -500 -50 200 R 50 50 1 1 I
+X GND 4 -500 -150 200 R 50 50 1 1 I
+X SCL 5 500 -150 200 L 50 50 1 1 I
+X SCA 6 500 -50 200 L 50 50 1 1 I
+X MOTION 7 500 50 200 L 50 50 1 1 I
+X ID_SEL 8 500 150 200 L 50 50 1 1 I
+X NC 9 0 -350 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
